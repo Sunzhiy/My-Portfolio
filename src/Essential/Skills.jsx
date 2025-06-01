@@ -50,7 +50,7 @@ const Skills = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 h-1/2 space-y-3">
           {web.map((Web) => (
-            <div className="flex flex-col bg-emerald-200 rounded-3xl items-center  w-1/3 h-1/2 justify-self-center justify-center min-h-24 min-w-24  sm:text-xl dm:text-2xl hover:scale-110 shadow-2xl hover:shadow-emerald-500">
+            <div className="flex flex-col bg-emerald-200 rounded-3xl items-center  w-1/3 h-1/2 justify-self-center justify-center min-h-24 min-w-24  sm:text-xl dm:text-2xl hover:scale-110 active:scale-110 shadow-2xl hover:shadow-emerald-500 active:shadow-emerald-500">
               <div>{Web.icon}</div>
               <p>{Web.name}</p>
             </div>
