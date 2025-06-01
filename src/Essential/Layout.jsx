@@ -62,7 +62,7 @@ const Layout = () => {
 
         <FaBars
           onClick={OpenNavbar}
-          className="block sm:hidden ml-5 text-2xl text-orange-300 cursor-pointer  hover:text-3xl"
+          className="block sm:hidden ml-5 text-2xl text-orange-300 cursor-pointer  hover:text-3xl active:text-3xl"
         />
 
         <div className="hidden sm:flex justify-center space-x-5">
@@ -99,9 +99,9 @@ const Layout = () => {
         >
           {Links.map((link) => (
             <Link
-              className="hover:text-fuchsia-500 pl-3 w-full hover:bg-lime-300
-              hover:pl-3.5
-               hover:border-l-3 cursor:pointer block"
+              className="hover:text-fuchsia-500 active:text-fuchsia-500 pl-3 w-full hover:bg-lime-300 active:bg-lime-300
+              hover:pl-3.5 active:pl-3.5
+               hover:border-l-3  active:border-l-3 cursor:pointer block"
               key={link.id}
               to={link.path}
             >
@@ -129,11 +129,11 @@ const Layout = () => {
           href="https://www.linkedin.com/in/zhiyuan-sun-401167214/"
           target="_blank"
         >
-          <BsLinkedin className="text-blue-800 hover:text-3xl" />
+          <BsLinkedin className="text-blue-800 hover:text-3xl active:text-3xl" />
         </a>
-       
+
         <a href="https://github.com/Sunzhiy" target="_blank">
-          <FaGithub className="text-black hover:text-3xl" />
+          <FaGithub className="text-black hover:text-3xl active:text-3xl" />
         </a>
         <p className="animate-color sm:hidden block text-xl">Sun</p>
         <p className="animate-text sm:block hidden">Sun</p>
