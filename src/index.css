@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color:#c6fdfc;
+  --text-color: #0b060f;
+  /* --primary-color:; */
+}
+
+[data-theme="dark"] {
+  --bg-color: #040303;
+  --text-color: #ffffff;
+  /* --primary-color:#ddd9e0; */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@keyframes ColorAndFontChange {
+  0% {
+    color: rgb(255, 38, 0);
+    font-size: 1.5rem;
+  }
+  25% {
+    color: rgb(238, 230, 7);
+    font-size: 2rem;
+  }
+  50% {
+    color: rgb(0, 0, 255);
+    font-size: 2.5rem;
+  }
+  75% {
+    color: rgb(144, 0, 255);
+    font-size: 2rem;
+  }
+  100% {
+    color: rgb(0, 204, 255);
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes ColorChange {
+  0% {
+    color: rgb(0, 34, 255);
+  }
+  25% {
+    color: rgb(7, 238, 99);
+  }
+  50% {
+    color: rgb(73, 7, 7);
+  }
+  75% {
+    color: rgb(239, 43, 43);
+  }
+  100% {
+    color: rgb(89, 0, 255);
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveLeftRight2 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(200px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(200px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-text {
+  animation: ColorAndFontChange 3s infinite;
+}
+
+.animate-color {
+  animation: ColorChange 3s infinite;
+}
+
+.move {
+  animation: moveLeftRight 3s infinite;
+}
+
+.move2 {
+  animation: moveLeftRight2 3s infinite;
+}
+
+.updown {
+  animation: moveUpDown 3s infinite;
+}
+
+@media (min-width: 640px) {
+  .sm\:updown {
+    animation: moveUpDown 3s infinite;
+  }
+}
